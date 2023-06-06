@@ -1,0 +1,150 @@
+.logoimg{
+display: flex;
+width: 100px;
+}
+.logoMarlin{
+  display: flex;
+  width: 100px;
+  justify-content: right;
+  margin-right: auto;
+  margin: 0px 100px;
+  padding: 10px;
+}
+body{
+    margin: 0;
+    font-family:sans-serif;
+}
+header {
+    width: 100%;
+    background: #2196f3;
+    padding: 0px;
+    text-align: center;
+    color: #fff;
+    box-shadow: #00090b;
+    position: fixed;
+  }
+  header label{
+    display: none;
+    width: 50px;
+    height: 60px;
+    padding: 5px;
+  }
+  
+/* presentación de la Marlin */
+  .imgVista{
+  background: #5db2f7;
+  padding: 0px;
+}
+  .titleVista {
+    position: absolute;
+    top: 100px;
+    /* width: 100%;
+    height: 100%; */
+    color: white;
+    margin: 10px;
+    padding: 15px;
+  }
+  h1{
+    color: blue;
+  }
+  /* Menu */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  nav a:hover {
+    color: #1BF7DE;
+  }
+  #Check{
+    display: none;
+  }
+  .imgMenu{
+    border-radius: 10px;
+  }
+  .menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+   justify-content: center;
+   padding: 5px;
+  }
+  .menu li:hover{
+    background: rgba(0,0,0,0.3);
+  }
+  .menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+    main {
+        padding: 20px;
+    }
+
+  /* menu responsive */
+  @media (max-width:767px){
+    header label{
+        display: block;
+      }
+  .menu{
+    position: absolute;
+    background: #35788e;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+  .menu ul{
+    flex-direction: column;
+  }
+  .menu li{
+    border-top: 1px solid#fff;
+  }
+  #Check:checked ~ .menu {
+    margin: 0;
+  }
+
+
+ /* imagenes */
+}
+.titleGalary h2 {
+  text:200px;
+ }
+.containerGalery{
+  box-sizing: border-box;
+}
+.containerGalery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  padding: 20px;
+  grid-gap: 10px;
+}
+.Galeria {
+  margin: 20px;
+}
+.imgGalery {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+.titleGalary {
+  position: relative;
+  bottom: 0px;
+  color: white;
+  width: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+.itemsGalery:nth-child(1) {
+  grid-row-start: span 2;
+}

@@ -1,0 +1,18 @@
+footer {
+    background: rgb(75, 68, 68);
+    padding: 40px;
+    text-align: center;
+}
+
+.redesSociales ul{
+    list-style: none;
+}
+.redesSociales ul li{
+    width: 20px;
+    height: 20px;
+    /* line-height: 5px; */
+    margin: 0 10px;
+    cursor: pointer;
+    /* border-radius: 50%;
+    border: 5px solid #d8e2dc; */
+    float: right;
